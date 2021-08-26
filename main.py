@@ -2,6 +2,7 @@ import speech_recognition as speech
 import pyttsx3
 import pywhatkit
 import pyjokes
+import datetime
 
 listener = speech.Recognizer()
 engine = pyttsx3.init()
@@ -29,7 +30,7 @@ def use_command():
     return command
 
 
-While True:
+while True:
     command = use_command()
     print(command)
     if 'play' in command:
