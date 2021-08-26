@@ -39,5 +39,8 @@ while True:
         speak('Current time is ' + time)
     elif 'joke' in command:
         speak(pyjokes.get_joke())
+    elif 'search for' in command:
+        search_term = command.split("for")[-1]
+        pywhatkit.search(search_term)
     else:
         speak('Please say the command again.')
