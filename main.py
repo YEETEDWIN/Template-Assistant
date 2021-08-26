@@ -7,7 +7,7 @@ import datetime
 listener = speech.Recognizer()
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)
+engine.setProperty('voice', voices[0].id)
 
 
 def speak(text):
@@ -22,9 +22,6 @@ def use_command():
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()
-            if 'alexa' in command:
-                command = command.replace('asist', '')
-                print(command)
     except:
         pass
     return command
