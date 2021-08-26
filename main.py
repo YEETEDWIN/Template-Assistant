@@ -22,6 +22,7 @@ def use_command():
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()
+            print(command)
     except:
         pass
     return command
@@ -42,5 +43,8 @@ while True:
     elif 'search for' in command:
         search_term = command.split("for")[-1]
         pywhatkit.search(search_term)
+    elif 'search on youtube
+        search_term = command.split("youtube")[-1]
+        pywhatkit.playonyt(search_term)
     else:
         speak('Please say the command again.')
