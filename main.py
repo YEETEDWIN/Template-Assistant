@@ -43,7 +43,7 @@ while True:
     elif 'search for' in command:
         search_term = command.split("for")[-1]
         pywhatkit.search(search_term)
-    elif 'search on youtube
+    elif 'search on youtube' in command:
         search_term = command.split("youtube")[-1]
         pywhatkit.playonyt(search_term)
     else:
