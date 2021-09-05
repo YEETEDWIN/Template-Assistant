@@ -3,6 +3,7 @@
 ## Installation
 (run those in command prompt/terminal)
 If you are using Apple Mac OS X please do this following below
+
 `brew install portaudio`
 then
 `pip install pyaudio`
